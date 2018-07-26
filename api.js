@@ -1,4 +1,3 @@
-import React from 'react'
 import { search, movie } from './mockData'
 
 export const titleLookup = async (title) => {

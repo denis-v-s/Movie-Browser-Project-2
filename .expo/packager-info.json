@@ -1,8 +1,8 @@
 {
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 21056,
+  "expoServerNgrokUrl": "https://2y-9pg.haosmark.project2-movie-browser.exp.direct",
+  "packagerNgrokUrl": "https://packager.2y-9pg.haosmark.project2-movie-browser.exp.direct",
+  "ngrokPid": 17704
 }

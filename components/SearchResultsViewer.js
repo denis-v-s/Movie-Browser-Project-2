@@ -1,23 +1,16 @@
 import React from 'react'
 import { FlatList } from 'react-native'
-import { movieDetails } from '../api'
-import { Card } from './Card'
+import Card from './Card'
 
-export default class SearchResultsViewer extends React.Component {
-  renderItem = o => <Card { ...o.item } onItemSelected={(title) => this.getMovieDetails(title)} />
+export const SearchResultsViewer = props => {
+  const renderItem = o => <Card {...o.item} onItemSelected={(title) => props.onItemSelected(title)} />
 
-  getMovieDetails = (title) => {
-    //movieDetails(title)
-    
-    this.props.navigation.navigate('Detail')
-  }
-
-  render() {
-    return (
-      <FlatList
-        data={ this.props.searchResults }
-        renderItem={ this.renderItem }
-      />
-    )
-  }
+  return (
+    <FlatList
+      data={props.searchResults}
+      renderItem={renderItem}
+    />
+  )
 }
+
+export default SearchResultsViewer

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { createSwitchNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation'
 import SearchScreen from './screens/SearchScreen'
 import MovieDetailScreen from './screens/MovieDetailScreen'
 
-const AppNavigator = createSwitchNavigator({
+const AppNavigator = createStackNavigator({
   Search: SearchScreen,
   Detail: MovieDetailScreen
 }, {
-  initialRouteName: 'Search'
-})
+    initialRouteName: 'Search'
+  })
 
 export default class App extends Component {
   render() {

@@ -3,16 +3,16 @@ import { TouchableOpacity, View, Text, Image, StyleSheet } from 'react-native'
 
 export const Card = props => {
     return (
-        <TouchableOpacity style={styles.card} onPress={ () => props.onItemSelected(props.Title) }>
+        <TouchableOpacity style={styles.card} onPress={() => props.onItemSelected(props.Title)}>
             <View>
-                <Image 
-                    source={{uri: props.Poster}} 
+                <Image
+                    source={{ uri: props.Poster }}
                     style={styles.thumbnail} />
             </View>
 
             <View>
-                <Text>Year: { props.Year }</Text>
-                <Text>Title: { props.Title }</Text>
+                <Text>Year: {props.Year}</Text>
+                <Text>Title: {props.Title}</Text>
             </View>
         </TouchableOpacity>
     )
@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
         marginVertical: 10,
     },
     thumbnail: {
-        height: 100, 
+        height: 100,
         width: 75
     }
 })
+
+export default Card
